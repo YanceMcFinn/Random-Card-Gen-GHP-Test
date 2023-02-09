@@ -29,6 +29,21 @@ function randomCard() {
   if (randSuit == "♠" || randSuit == "♣") {
     card.style.color = "black";
   }
+
+  if (randSuit == "♥") {
+    randSuit = "&hearts;";
+  }
+
+  if (randSuit == "♦") {
+    randSuit = "&diams;";
+  }
+  if (randSuit == "♠") {
+    randSuit = "&spades;";
+  }
+  if (randSuit == "♣") {
+    randSuit = "&clubs;";
+  }
+
   if (
     randRank == "J" ||
     randRank == "Q" ||
