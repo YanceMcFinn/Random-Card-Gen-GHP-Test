@@ -94,88 +94,75 @@ body {
 .central-suit-icon {
   font-size: 4rem;
   position: absolute;
+  font-family: "Times New Roman", Times, serif;
 }
 #centralIcon1 {
   top: -0.2em;
   left: 0px;
-  font-family: Arial;
+
 }
 #centralIcon2 {
   top: -0.2em;
   right: 0px;
-  font-family: Arial;
 }
 #centralIcon3 {
   top: 0.65em;
   left: 0px;
-  font-family: Arial;
 }
 #centralIcon4 {
   top: 0.65em;
   right: 0px;
-  font-family: Arial;
 }
 #centralIcon5 {
   bottom: 0.65em;
   left: 0px;
   transform: rotate(180deg);
-  font-family: Arial;
 }
 #centralIcon6 {
   bottom: 0.65em;
   right: 0px;
   transform: rotate(180deg);
-  font-family: Arial;
 }
 #centralIcon7 {
   bottom: -0.2em;
   left: 0px;
   transform: rotate(180deg);
-  font-family: Arial;
 }
 #centralIcon8 {
   bottom: -0.2em;
   right: 0px;
   transform: rotate(180deg);
-  font-family: Arial;
 }
 #centralIcon9 {
   top: 0.3em;
   right: 1em;
-  font-family: Arial;
 }
 
 #centralIcon10 {
   top: 1.2em;
   right: 1em;
-  font-family: Arial;
 }
 #centralIcon11 {
   bottom: 0.3em;
   right: 1em;
   transform: rotate(180deg);
-  font-family: Arial;
 }
 #centralIcon12 {
   top: 1.2em;
   left: 0em;
-  font-family: Arial;
 }
 #centralIcon13 {
   top: 1.2em;
   right: 0em;
-  font-family: Arial;
 }
 #centralIcon14 {
   top: -0.2em;
   right: 1em;
-  font-family: Arial;
 }
 #centralIcon15 {
   bottom: -0.2em;
   right: 1em;
   transform: rotate(180deg);
-  font-family: Arial;
 }
 
 #big-rank-central-icon {
