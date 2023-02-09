@@ -1,238 +1,254 @@
 body {
-    background: green;
-  }
-  
-  .container {
-    display: grid;
-    place-content: center;
-    height: 100vh;
-    width: 100vw;
-  }
-  
-  #main-card {
-    color: black;
-  }
-  
-  .card {
-    width: 250px;
-    height: 350px;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
-  }
-  
-  .card-content {
-    margin: auto;
-    display: inline-block;
-    width: 65%;
-    height: 65%;
-    /* outline: 1px solid red; */
-    position: relative;
-  }
-  
-  .corner-icon {
-    display: inline-block;
-    position: absolute;
-    width: 40px;
-    top: 10px;
-    left: 5px;
-    text-align: center;
-    /* outline: 1px red solid; */
-    font-size: 16px;
-  }
-  .corner-icon-lr {
-    display: inline-block;
-    position: absolute;
-    width: 40px;
-    bottom: 10px;
-    right: 5px;
-    text-align: center;
-    /* outline: 1px red solid; */
-    font-size: 16px;
-    transform: rotate(180deg);
-  }
-  
-  .corner-suit {
-    display: inline-block;
-    /* outline: 1px solid blue; */
-    margin-top: -10px;
-    padding: 0;
-    line-height: 1em;
-  }
-  .corner-rank {
-    display: inline-block;
-    width: 100%;
-    margin: 0px;
-    font-family: "Roboto Slab", serif;
-  }
-  #corner-rank-joker {
-    display: inline-block;
-    width: 100%;
-    margin: 0px;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    letter-spacing: -0.25em;
-    font-size: 26px;
-  }
-  #corner-rank-joker-lr {
-    display: inline-block;
-    width: 100%;
-    margin: 0px;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    letter-spacing: -0.25em;
-    font-size: 26px;
-  }
-  
-  .central-suit-icon {
-    font-size: 4rem;
-    position: absolute;
-  }
-  #centralIcon1 {
-    top: -0.2em;
-    left: 0px;
-  }
-  #centralIcon2 {
-    top: -0.2em;
-    right: 0px;
-  }
-  #centralIcon3 {
-    top: 0.65em;
-    left: 0px;
-  }
-  #centralIcon4 {
-    top: 0.65em;
-    right: 0px;
-  }
-  #centralIcon5 {
-    bottom: 0.65em;
-    left: 0px;
-    transform: rotate(180deg);
-  }
-  #centralIcon6 {
-    bottom: 0.65em;
-    right: 0px;
-    transform: rotate(180deg);
-  }
-  #centralIcon7 {
-    bottom: -0.2em;
-    left: 0px;
-    transform: rotate(180deg);
-  }
-  #centralIcon8 {
-    bottom: -0.2em;
-    right: 0px;
-    transform: rotate(180deg);
-  }
-  #centralIcon9 {
-    top: 0.3em;
-    right: 1em;
-  }
-  
-  #centralIcon10 {
-    top: 1.2em;
-    right: 1em;
-  }
-  #centralIcon11 {
-    bottom: 0.3em;
-    right: 1em;
-    transform: rotate(180deg);
-  }
-  #centralIcon12 {
-    top: 1.2em;
-    left: 0em;
-  }
-  #centralIcon13 {
-    top: 1.2em;
-    right: 0em;
-  }
-  #centralIcon14 {
-    top: -0.2em;
-    right: 1em;
-  }
-  #centralIcon15 {
-    bottom: -0.2em;
-    right: 1em;
-    transform: rotate(180deg);
-  }
-  
-  #big-rank-central-icon {
-    /* outline: 1px solid blue; */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5em;
-  }
-  #big-rank {
-    display: inline-block;
-    font-family: "Roboto Slab", serif;
-  }
-  
-  #big-suit {
-    display: inline-block;
-    padding-top: 7px;
-  }
-  
-  #joker-image {
-    width: 100%;
-    position: absolute;
-    top: -25px;
-    left: -5px;
-  }
-  
-  #buttonDiv {
-    width: 250px;
-  }
-  
-  #newCardButton {
-    margin: 10px auto 0px;
-    height: 40px;
-    background: linear-gradient(rgb(255, 0, 0), rgb(155, 0, 0));
-    border: none;
-    border-radius: 5px;
-    font-family: "Roboto Slab", serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: white;
-    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
-    width: 70%;
-    display: block;
-  }
-  
-  #autoGenButton {
-    margin: 7px auto 7px;
-    height: 50px;
-    background: linear-gradient(rgb(24, 117, 255), rgb(14, 64, 138));
-    border: none;
-    border-radius: 5px;
-    font-family: "Roboto Slab", serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: white;
-    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
-    width: 70%;
-    display: block;
-  }
-  #stopAutoGenButton {
-    margin: auto;
-    height: 40px;
-    background: linear-gradient(rgb(255, 220, 24), rgb(218, 158, 29));
-    border: none;
-    border-radius: 5px;
-    font-family: "Roboto Slab", serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: black;
-    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
-    width: 70%;
-    display: block;
-  }
-  
+  background: green;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#main-card {
+  color: black;
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
+}
+
+.card-content {
+  margin: auto;
+  display: inline-block;
+  width: 65%;
+  height: 65%;
+  /* outline: 1px solid red; */
+  position: relative;
+}
+
+.corner-icon {
+  display: inline-block;
+  position: absolute;
+  width: 40px;
+  top: 10px;
+  left: 5px;
+  text-align: center;
+  /* outline: 1px red solid; */
+  font-size: 16px;
+}
+.corner-icon-lr {
+  display: inline-block;
+  position: absolute;
+  width: 40px;
+  bottom: 10px;
+  right: 5px;
+  text-align: center;
+  /* outline: 1px red solid; */
+  font-size: 16px;
+  transform: rotate(180deg);
+}
+
+.corner-suit {
+  display: inline-block;
+  /* outline: 1px solid blue; */
+  margin-top: -10px;
+  padding: 0;
+  line-height: 1em;
+  font-family: Arial;
+}
+.corner-rank {
+  display: inline-block;
+  width: 100%;
+  margin: 0px;
+  font-family: "Roboto Slab", serif;
+}
+#corner-rank-joker {
+  display: inline-block;
+  width: 100%;
+  margin: 0px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  letter-spacing: -0.25em;
+  font-size: 26px;
+}
+#corner-rank-joker-lr {
+  display: inline-block;
+  width: 100%;
+  margin: 0px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  letter-spacing: -0.25em;
+  font-size: 26px;
+}
+
+.central-suit-icon {
+  font-size: 4rem;
+  position: absolute;
+}
+#centralIcon1 {
+  top: -0.2em;
+  left: 0px;
+  font-family: Arial;
+}
+#centralIcon2 {
+  top: -0.2em;
+  right: 0px;
+  font-family: Arial;
+}
+#centralIcon3 {
+  top: 0.65em;
+  left: 0px;
+  font-family: Arial;
+}
+#centralIcon4 {
+  top: 0.65em;
+  right: 0px;
+  font-family: Arial;
+}
+#centralIcon5 {
+  bottom: 0.65em;
+  left: 0px;
+  transform: rotate(180deg);
+  font-family: Arial;
+}
+#centralIcon6 {
+  bottom: 0.65em;
+  right: 0px;
+  transform: rotate(180deg);
+  font-family: Arial;
+}
+#centralIcon7 {
+  bottom: -0.2em;
+  left: 0px;
+  transform: rotate(180deg);
+  font-family: Arial;
+}
+#centralIcon8 {
+  bottom: -0.2em;
+  right: 0px;
+  transform: rotate(180deg);
+  font-family: Arial;
+}
+#centralIcon9 {
+  top: 0.3em;
+  right: 1em;
+  font-family: Arial;
+}
+
+#centralIcon10 {
+  top: 1.2em;
+  right: 1em;
+  font-family: Arial;
+}
+#centralIcon11 {
+  bottom: 0.3em;
+  right: 1em;
+  transform: rotate(180deg);
+  font-family: Arial;
+}
+#centralIcon12 {
+  top: 1.2em;
+  left: 0em;
+  font-family: Arial;
+}
+#centralIcon13 {
+  top: 1.2em;
+  right: 0em;
+  font-family: Arial;
+}
+#centralIcon14 {
+  top: -0.2em;
+  right: 1em;
+  font-family: Arial;
+}
+#centralIcon15 {
+  bottom: -0.2em;
+  right: 1em;
+  transform: rotate(180deg);
+  font-family: Arial;
+}
+
+#big-rank-central-icon {
+  /* outline: 1px solid blue; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+}
+#big-rank {
+  display: inline-block;
+  font-family: "Roboto Slab", serif;
+}
+
+#big-suit {
+  display: inline-block;
+  padding-top: 7px;
+  font-family: Arial;
+}
+
+#joker-image {
+  width: 100%;
+  position: absolute;
+  top: -25px;
+  left: -5px;
+}
+
+#buttonDiv {
+  width: 250px;
+}
+
+#newCardButton {
+  margin: 10px auto 0px;
+  height: 40px;
+  background: linear-gradient(rgb(255, 0, 0), rgb(155, 0, 0));
+  border: none;
+  border-radius: 5px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  width: 70%;
+  display: block;
+}
+
+#autoGenButton {
+  margin: 7px auto 7px;
+  height: 50px;
+  background: linear-gradient(rgb(24, 117, 255), rgb(14, 64, 138));
+  border: none;
+  border-radius: 5px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  width: 70%;
+  display: block;
+}
+#stopAutoGenButton {
+  margin: auto;
+  height: 40px;
+  background: linear-gradient(rgb(255, 220, 24), rgb(218, 158, 29));
+  border: none;
+  border-radius: 5px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: black;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  width: 70%;
+  display: block;
+}
